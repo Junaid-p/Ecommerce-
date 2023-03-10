@@ -1,0 +1,78 @@
+<div class="row">
+
+
+    <div class="col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="col-md-10 mt-5">
+        <h5 class="text-center"><b>Add Product</b></h5>
+        <div style="width: 80%; margin-left: auto; margin-right: auto; margin-bottom: 10%;">
+            <form method="POST">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <!-- <input type="dropdown" class="form-control" id="nameField" placeholder="product type"><br> -->
+                        <select class="form-select form-control" aria-label="Default select example"
+                            name="category"><br><br>
+                            <option selected> Select Category</option>
+                            <option value="1">Mobile</option>
+                            <option value="2">Laptop</option>
+                            <option value="3">Desktop</option>
+                            <option value="3">Mobile Accessories</option>
+                            <option value="3">Computer Accessories</option>
+                            <option value="3">Laptop Accessories</option>
+
+
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Product Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nameField" placeholder="Product" name="name"><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Product No</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nameField" placeholder="" name="pro_no"><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="descriptionField" placeholder="Write Description" rows="3"
+                            style="margin-bottom: 20px;" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="pricefield" placeholder="₹" name="price"><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Current Stock</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="stockField" placeholder="Count"
+                            name="currentStock"><br>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Upload image</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="stockField" placeholder="Count" name="img"><br>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="col-sm-10" style="width: 100%">
+                        <button type="submit" class="btn btn-primary" style="width: 50%; margin-left: 40%; ">Add
+                            Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

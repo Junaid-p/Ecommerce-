@@ -1,0 +1,61 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-4" *ngFor="let product of productList">
+      <div class="card" style="width: 18rem;">
+        <img src="{{ product.image }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p>{{product.title}}</p>
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="\assets\category\camera.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="\assets\category\head set.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-5">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="\assets\category\phone.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="\assets\category\speker.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="\assets\category\fashion.jpg" class="card-img-top imageclass" alt="...">
+        <div class="card-body">
+          <a [routerLink]="'/productdetails'" class="btn btn-primary">products</a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+<app-footer></app-footer>

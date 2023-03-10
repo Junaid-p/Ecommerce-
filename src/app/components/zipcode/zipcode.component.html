@@ -1,0 +1,8 @@
+<form [formGroup]="zipCodeForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Zipcode</label>
+      <input formControlName="zipcode" type="text" class="form-control" id="exampleInputEmail1" placeholder="zipcode" >
+      <span *ngIf="zipCodeForm.get('zipcode')?.hasError('invalidAsync')"> zip code not available</span>
+
+    </div>
+</form>

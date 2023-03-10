@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+    
+    
+        <div class="col-md-10 mt-5">
+            <form #categoryform="ngForm" (ngSubmit)="submit(categoryform.value)">
+                <div class="mb-3">
+                    <label  class="form-label">Category</label>
+                    <input type="text" ngModel name="category_name" class="form-control">
+    
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Description</label>
+                    <input type="text" ngModel name="category_des" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Image</label>
+                    <input type="file" name="category_image" class="form-control" id="exampleInputPassword1" (change)="OnImagechange($event)">
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Add Category</button>
+                <span>{{frontmessage}}</span>
+
+            </form>
+        </div>
+    
+    </div>
+</div>

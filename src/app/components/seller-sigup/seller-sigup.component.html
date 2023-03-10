@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <!-- <section class="h-100 bg-dark"> -->
+    <!-- <div class="container py-5 h-100"> -->
+    <div class="row d-flex justify-content-center align-items-center h-100  m-5">
+        <div class="col">
+            <div class="card card-registration my-4">
+                <div class="row g-0">
+                    <div class="col-xl-6 d-none d-xl-block">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                            alt="Sample photo" class="img-fluid"
+                            style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card-body text-black">
+                            <h3 class="mb-5 text-uppercase">Seller registration </h3>
+
+                            <form #sellerform="ngForm" (ngSubmit)="submit(sellerform.value)">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="form3Example9">First name</label>
+                                        <input type="text" ngModel class="form-control form-control-lg"
+                                            name="first_name" />
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label" for="form3Example9">Last name</label>
+                                        <input type="text" ngModel class="form-control form-control-lg"
+                                            name="last_name" />
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example9">Email</label>
+                                    <input type="email" ngModel class="form-control form-control-lg" name="email" />
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example8">Address</label>
+                                    <input type="text" ngModel class="form-control form-control-lg" name="address" />
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example9">Phone</label>
+                                    <input type="number" ngModel class="form-control form-control-lg" name="phone" />
+                                </div>
+
+
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example8">Bank Name</label>
+                                    <input type="text" ngModel class="form-control form-control-lg" name="bank_name" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example8">Branch</label>
+                                    <input type="text" ngModel class="form-control form-control-lg" name="branch" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example8">IFSC</label>
+                                    <input type="number" ngModel class="form-control form-control-lg" name="ifsc" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example8">Account Number</label>
+                                    <input type="number" ngModel class="form-control form-control-lg"
+                                        name="account_no" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label" for="form3Example97">Profile image</label>
+                                    <input type="file" ngModel class="form-control form-control-lg" name="seller_pic" (change)="onImagechange($event)" />
+                                </div>
+
+                                <div class="d-flex justify-content-end pt-3">
+                                    <button type="submit" class="btn btn-warning btn-lg ms-2">Register</button>
+                                </div>
+
+                                <a routerLink="/seller-login" class="small text-muted">I have already an account?</a>
+                                {{frontmessage}}
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

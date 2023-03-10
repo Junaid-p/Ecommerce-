@@ -1,0 +1,33 @@
+<app-header> </app-header>
+<div class="row" >
+    <div class="col mt-5" *ngFor="let category of categoryData">
+        <div class="card" style="width: 18rem;">
+            <img src="http://127.0.0.1:8000/{{category.category_image}}" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">{{category.category_name}}</h5>
+              <a [routerLink]="'/product'" class="btn btn-primary">products</a>
+            </div>
+          </div>
+    </div>
+    <!-- <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="\assets\category\phone.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Samrt phones</h5>
+              <a [routerLink]="'/product'" class="btn btn-primary">products</a>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="\assets\category\fashion.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Fashion</h5>
+              <a [routerLink]="'/product'" class="btn btn-primary">products</a>
+            </div> 
+          </div>
+    </div> -->
+    
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+<app-footer></app-footer>>

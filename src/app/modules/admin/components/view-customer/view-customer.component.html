@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-10 mt-5 ">
+            <h5>Customer List</h5>
+            <table class="table align-middle mb-0 bg-white">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Edit</th>
+                    <tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let customer of customerList">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="http://127.0.0.1:8000/{{customer.customer_pic}}" alt=""
+                                    style="width: 45px; height: 45px" class="rounded-circle" />
+
+                            </div>
+                        </td>
+                        <td>
+                           {{customer.first_name}} {{customer.last_name}}
+                        </td>
+                        <td>
+                            {{customer.email}}
+                        </td>
+                        <td>
+                            {{customer.phone}}
+                        </td>
+                        <td>
+                            {{customer.address}}
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
